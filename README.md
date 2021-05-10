@@ -80,3 +80,4 @@ Terraform
     Step 6:
       To create the infrastructure execute the below command:
       terraform apply solution.plan
+Note:If got any errors while applying the solution, then delete all files that got created by the commands and repea all the steps above
