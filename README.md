@@ -69,15 +69,23 @@ Terraform
       Execute below command to validate the code :
       terraform validate
       output : Sucess
-      ![image](https://user-images.githubusercontent.com/49653011/117708133-707aa600-b19d-11eb-95a9-eefe96dd6283.png)
-
-     
+      ![image](https://user-images.githubusercontent.com/49653011/117719807-d8d08400-b1ab-11eb-8f38-071ebf3380f9.png)
+    
     Step 5:
      To create the plan ececute below command:
      terraform plan -out solution.plan    
-     Out put should look like this:
+     Output should look like this:
      ![image](https://user-images.githubusercontent.com/49653011/117705471-11676200-b19a-11eb-8761-e8f16a010aa5.png)
     Step 6:
       To create the infrastructure execute the below command:
       terraform apply solution.plan
+      Output should look like this
+      ![image](https://user-images.githubusercontent.com/49653011/117719431-62cc1d00-b1ab-11eb-9d2f-bd3f7c1d380c.png)
+    Step 7:
+     To destroy please execute below commnds:
+     terraform plan -destroy -out solution.destroy.plan
+     terraform apply solution.destroy.plan
+     ![image](https://user-images.githubusercontent.com/49653011/117723457-64e4aa80-b1b0-11eb-99d2-e1098247b492.png)
+
+    
 Note:If got any errors while applying the solution, then delete all files that got created by the commands and repea all the steps above
