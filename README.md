@@ -40,3 +40,8 @@ Deploying a Web Server in Azure
           packer build Packer/server.json
     Step4: out out should look like this":
      ![Capture](https://user-images.githubusercontent.com/49653011/117557919-17e4c500-b046-11eb-9be8-cd72387b99c5.PNG)
+     
+     
+     
+     ![image](https://user-images.githubusercontent.com/49653011/117705471-11676200-b19a-11eb-8761-e8f16a010aa5.png)
+
