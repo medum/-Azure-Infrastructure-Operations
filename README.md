@@ -18,10 +18,29 @@ Deploying a Web Server in Azure
      Step 4: Log in to Cli "az login"
      Step 5: Execute below commands 
               az policy definition create --name TagsPolicyDefinition --mode All --rules azurepolicy.json --params azurepolicy.parameters.json
-              az policy assignment create --policy TagsPolicyDefinition --params azurepolicy.paramasignment.json
-              az policy assignment create --name 'Tagging-Policy-Assignment' --params azurepolicy.paramasignment.json
-    Step 6: out put when you execute "az policy assignmentlist"
-   ![az-policyAssignmentlist](https://user-images.githubusercontent.com/49653011/117557678-a4da4f00-b043-11eb-87cb-0263a4f60cd8.PNG)
+output:
+![image](https://user-images.githubusercontent.com/49653011/117850904-c27e0300-b253-11eb-8107-b8c1c14efbd0.png)
+
+              az policy definition show --name TagsPolicyDefinition
+output:
+![image](https://user-images.githubusercontent.com/49653011/117851263-23a5d680-b254-11eb-8c3e-b9b98fd52447.png)
+![image](https://user-images.githubusercontent.com/49653011/117851328-31f3f280-b254-11eb-9767-5cf43e207c65.png)
+
+              az policy assignment create --name TagsPolicyDefinition --policy TagsPolicyDefinition --param  azurepolicy.paramasignment.json
+output:
+![image](https://user-images.githubusercontent.com/49653011/117851432-50f28480-b254-11eb-9beb-7dd334a34177.png)
+             az policy assignment create --name tagging-policy --policy TagsPolicyDefinition --param azurepolicy.paramasignment.json
+  output:
+  ![image](https://user-images.githubusercontent.com/49653011/117851593-767f8e00-b254-11eb-8106-dde2dd6dc766.png)
+
+    Step 6: az policy assignment list
+output:
+    
+![image](https://user-images.githubusercontent.com/49653011/117851769-a2027880-b254-11eb-8c81-7bc46834fcdd.png)
+![image](https://user-images.githubusercontent.com/49653011/117851813-af1f6780-b254-11eb-803d-f3e2b83d564c.png)
+![image](https://user-images.githubusercontent.com/49653011/117852039-f0177c00-b254-11eb-9108-72b0c126f96e.png)
+![image](https://user-images.githubusercontent.com/49653011/117852110-01608880-b255-11eb-9c5d-ef546df72d64.png)
+
 
    Packer:
    
